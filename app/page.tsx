@@ -19,7 +19,6 @@ const CONTENT = {
     headline: "Real estate investing + advisory.",
     subhead:
       "Aligning investors with compelling risk-adjusted opportunities. Los Angeles-based with a national network. I partner across equity and structured capital — focused on situations where structure, speed, and judgment matter.",
-    intro: "I've spent 14 years in real estate private equity and 4 years at a public REIT, investing through multiple cycles, from post-GFC and COVID to today's environment, across both distressed and expansionary markets. I invest across the capital stack in assets, portfolios and platforms, focusing on situations where structure and judgment drive outcomes. I'm actively building new relationships with LPs, sponsors, and brokers who value clarity, alignment, and clean execution",
     ctaLabel: "Connect",
     ctaHref: "mailto:jeremy@jrgriffin.co",
   },
@@ -47,6 +46,7 @@ const CONTENT = {
 
   experience: {
     title: "Experience",
+    intro: "I've spent 14 years in real estate private equity and 4 years at a public REIT, investing through multiple cycles, from post-GFC and COVID to today's environment, across both distressed and expansionary markets. I invest across the capital stack in assets, portfolios and platforms, focusing on situations where structure and judgment drive outcomes. I'm actively building new relationships with LPs, sponsors, and brokers who value clarity, alignment, and clean execution.",
     bullets: [
       "20+ years investing and operating in real estate",
       "Experience across equity (LP, GP, co-GP, programmatic JVs) and debt/structured capital (preferred equity, mezzanine, bespoke solutions)",
@@ -54,6 +54,7 @@ const CONTENT = {
       "$2bn+ transaction volume across cycles and property types",
       "MBA from Columbia Business School, BA from UCLA",
       "Additional transaction experience and case studies available upon request",
+      "Not an offer to sell or the solicitation of an offer to buy securities; information available upon request.",
     ],
   },
 
@@ -66,7 +67,7 @@ const CONTENT = {
       },
       {
         label: "Deal size",
-        value: "$25–$50MM+ asset value · $5–$20MM equity checks",
+        value: "$25–$50MM+ asset value · $5–$20MM equity investments",
       },
       {
         label: "Structures",
@@ -76,7 +77,7 @@ const CONTENT = {
       {
         label: "Deal types",
         value:
-          "Special situations with motivated/forced selling · recaps · DPO's · transitional business plans where structure and certainty matter · selective thematic growth opportunities",
+          "Motivated/forced selling · capital stack solutions · DPOs · transitional business plans where structure and certainty matter · selective thematic growth opportunities",
       },
       {
         label: "Geography",
@@ -91,7 +92,7 @@ const CONTENT = {
       {
         label: "Sponsors / Operators",
         value:
-          "Collaborative capital for new acquisitions, recaps, and structured solutions.",
+          "Collaborative capital for acquisitions, transitional business plans, and capital stack solutions.",
       },
       {
         label: "LPs / Capital Partners",
@@ -122,7 +123,7 @@ const CONTENT = {
   contact: {
     title: "Let's connect",
     subhead:
-      "If you're working on a deal, exploring a recap, or want to compare notes, please reach out.",
+      "If you're working on a deal, need a capital solution, or want to compare notes, please reach out.",
     email: "jeremy@jrgriffin.co",
     linkedin: "https://www.linkedin.com/in/jeremy-griffin-a01b491/",
   },
@@ -249,12 +250,6 @@ export default function Page() {
               {CONTENT.hero.subhead}
             </p>
 
-            <div className="mt-12 rounded-2xl border border-neutral-200/60 bg-neutral-50 p-8 sm:p-10">
-              <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
-                {CONTENT.hero.intro}
-              </p>
-            </div>
-
             <div className="mt-12">
               <a
                 href={CONTENT.hero.ctaHref}
@@ -300,6 +295,9 @@ export default function Page() {
       {/* Experience */}
       <Section id="experience" title={CONTENT.experience.title} bgColor="bg-white">
         <div className="rounded-3xl border border-neutral-200/60 bg-neutral-50 p-8 sm:p-10 shadow-sm">
+          <p className="text-sm sm:text-base text-neutral-600 leading-relaxed mb-8">
+            {CONTENT.experience.intro}
+          </p>
           <BulletList items={CONTENT.experience.bullets} />
         </div>
       </Section>
