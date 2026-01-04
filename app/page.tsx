@@ -46,7 +46,7 @@ const CONTENT = {
 
   experience: {
     title: "Experience",
-    intro: "I've spent 14 years in real estate private equity and 4 years at a public REIT, investing through multiple cycles, from post-GFC and COVID to today's environment, across both distressed and expansionary markets. I invest across the capital stack in assets, portfolios and platforms, focusing on situations where structure and judgment drive outcomes. I'm actively building new relationships with LPs, sponsors, and brokers who value clarity, alignment, and clean execution.",
+    intro: "I've spent 14 years in real estate private equity and 4 years at a public REIT, investing through multiple cycles, from post-GFC and COVID to today's environment, across both distressed and expansionary markets. I invest across the capital stack in assets, portfolios, and platforms, focusing on situations where structure and judgment drive outcomes. I'm actively building new relationships with LPs, sponsors, and brokers who value clarity, alignment, and clean execution.",
     bullets: [
       "20+ years investing and operating in real estate",
       "Experience across equity (LP, GP, co-GP, programmatic JVs) and debt/structured capital (preferred equity, mezzanine, bespoke solutions)",
