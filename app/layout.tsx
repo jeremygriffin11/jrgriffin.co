@@ -3,19 +3,29 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jeremy Griffin — Real Estate Investing + Advisory",
-  description: "Real estate investing + advisory. Los Angeles-based with a national network. Flexible across equity and structured capital. Partnering with LPs, sponsors/operators, and brokers/advisors.",
+  title: "Jeremy Griffin — Real Estate Solutions",
+  description:
+    "Capital solutions, strategic advisory, and tailored tools for companies that touch real estate. 20+ years of institutional experience.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
 }
-
