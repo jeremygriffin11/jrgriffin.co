@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jeremy Griffin — Real Estate Solutions",
+  title: "Jeremy Griffin — Investment & Advisory",
   description:
     "Capital solutions, strategic advisory, and tailored tools for companies that touch real estate. 20+ years of institutional experience.",
 };
