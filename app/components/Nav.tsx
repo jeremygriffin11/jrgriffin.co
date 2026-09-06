@@ -2,6 +2,13 @@
 
 import { useState, useEffect } from "react";
 
+const LINKS = [
+  { href: "#approach", label: "Approach" },
+  { href: "#execute", label: "How We Execute" },
+  { href: "#audience", label: "Who It's For" },
+  { href: "#principals", label: "Principals" },
+];
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -12,77 +19,36 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  const handleNavClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
+  const go = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-      setMobileOpen(false);
-    }
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setMobileOpen(false);
   };
 
   return (
     <nav className={scrolled ? "scrolled" : ""} id="nav">
       <div className="nav-inner">
-        <a
-          href="#top"
-          className="nav-logo"
-          onClick={(e) => handleNavClick(e, "#top")}
-        >
-          Jeremy Griffin
+        <a href="#top" className="nav-logo" onClick={(e) => go(e, "#top")}>
+          <span className="nav-mark">{"///"}</span>
+          <span className="nav-word">Marine Street</span>
         </a>
         <button
           className="nav-toggle"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
+          aria-expanded={mobileOpen}
         >
-          <span />
-          <span />
-          <span />
+          <span /><span /><span />
         </button>
         <ul className={`nav-links${mobileOpen ? " open" : ""}`}>
+          {LINKS.map((l) => (
+            <li key={l.href}>
+              <a href={l.href} onClick={(e) => go(e, l.href)}>{l.label}</a>
+            </li>
+          ))}
           <li>
-            <a
-              href="#approach"
-              onClick={(e) => handleNavClick(e, "#approach")}
-            >
-              Approach
-            </a>
-          </li>
-          <li>
-            <a
-              href="#solutions"
-              onClick={(e) => handleNavClick(e, "#solutions")}
-            >
-              Solutions
-            </a>
-          </li>
-          <li>
-            <a
-              href="#audience"
-              onClick={(e) => handleNavClick(e, "#audience")}
-            >
-              Partners
-            </a>
-          </li>
-          <li>
-            <a
-              href="#experience"
-              onClick={(e) => handleNavClick(e, "#experience")}
-            >
-              Experience
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="nav-cta"
-              onClick={(e) => handleNavClick(e, "#contact")}
-            >
-              Let&apos;s Connect
+            <a href="#contact" className="nav-cta" onClick={(e) => go(e, "#contact")}>
+              Contact
             </a>
           </li>
         </ul>
