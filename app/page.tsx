@@ -180,8 +180,8 @@ export default function Page() {
                 any business.
               </p>
               <p className="principal-meta">
-                System architecture, data systems, infrastructure, tooling, and the
-                discipline of proving something works before it ships.{' '}
+                System architecture, data systems, infrastructure, tooling, and
+                engineering rigor.{' '}
                 <strong>MS, Columbia School of Engineering and Applied Sciences.</strong>
               </p>
             </div>
