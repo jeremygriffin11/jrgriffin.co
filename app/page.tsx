@@ -172,14 +172,15 @@ export default function Page() {
                 </div>
               </div>
               <p className="principal-bio">
-                Matt builds the internal systems other engineers depend on, taking something
-                one person runs and making it work for an organization. He led factory test
-                infrastructure across four product lines at Mill, and previously ran quality
-                and test engineering at Whisper and new product introduction at Stryker.
+                Matt builds the systems that actually change the way teams work — reliable,
+                intuitive, and intelligent. He led system architecture for platforms used
+                across numerous products, at the nexus of software and hardware. After years
+                in the smart-hardware startup space, Matt now works on embedding industry
+                expertise into scalable, intelligent software platforms that can plug into
+                any business.
               </p>
               <p className="principal-meta">
-                Systems architecture, data infrastructure, and the discipline of proving
-                something works before it ships. <strong>MS, Columbia University.</strong>
+                <strong>MS, Columbia School of Engineering and Applied Sciences.</strong>
               </p>
             </div>
           </div>
