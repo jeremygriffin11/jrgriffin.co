@@ -1,30 +1,36 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { Newsreader, Archivo } from "next/font/google";
 import "./globals.css";
 
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-display-src",
+  display: "swap",
+  fallback: ["Georgia", "serif"],
+  adjustFontFallback: false,
+});
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-body-src",
+  display: "swap",
+  fallback: ["-apple-system", "BlinkMacSystemFont", "sans-serif"],
+});
+
 export const metadata: Metadata = {
-  title: "Jeremy Griffin — Investment & Advisory",
+  title: "Marine Street",
   description:
-    "Capital solutions, strategic advisory, and tailored tools for companies that touch real estate. 20+ years of institutional experience.",
+    "Marine Street solves complexity for companies that touch real estate. Real estate strategy, technology, and capital.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={`${newsreader.variable} ${archivo.variable}`}>
       <body>{children}</body>
     </html>
   );

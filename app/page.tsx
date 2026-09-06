@@ -1,299 +1,210 @@
 import Image from "next/image";
 import Nav from "./components/Nav";
-import RevealOnScroll from "./components/RevealOnScroll";
 
 export default function Page() {
   return (
     <>
       <Nav />
 
-      {/* Hero */}
       <section className="hero" id="top">
         <div className="hero-inner">
-          <p className="hero-label">
-            Investment &nbsp;&middot;&nbsp; Advisory &nbsp;&middot;&nbsp;
-            Solutions
+          <p className="hero-label settle">Advise &nbsp;·&nbsp; Build &nbsp;·&nbsp; Invest</p>
+          <h1 className="settle settle-2">
+            Marine Street solves complexity for companies that touch real estate.
+          </h1>
+          <p className="hero-sub settle settle-3">
+            Real estate strategy, technology, and capital, for firms working out what a
+            changing market means for how they operate.
           </p>
-          <h1>Solving real problems for companies that touch real estate.</h1>
-          <p className="hero-sub">
-            Capital solutions. Strategic expertise. High impact, built on 20+
-            years of institutional real estate experience.
-          </p>
-          <a href="#contact" className="hero-cta">
-            Let&apos;s Connect
-          </a>
+          <a href="#contact" className="hero-cta settle settle-4">Let&apos;s Connect</a>
         </div>
       </section>
 
-      {/* Approach */}
       <section className="approach" id="approach">
         <div className="container">
-          <RevealOnScroll>
-            <p className="section-label">The Approach</p>
-            <h2 className="section-title">
-              The starting point is always the problem.
-            </h2>
-          </RevealOnScroll>
-          <RevealOnScroll className="approach-text">
+          <p className="section-label">The Approach</p>
+          <div className="approach-grid">
             <p>
-              Sometimes the answer is capital: a flexible, well-structured
-              solution through{" "}
-              <span className="entity">Marine Street Partners</span> that
-              addresses a real need in the capital stack. Sometimes it&apos;s
-              expertise: an outsourced strategic perspective through{" "}
-              <span className="entity">Marine Street Advisory</span> that
-              brings institutional rigor without the overhead. And sometimes
-              it&apos;s building something new: a tailored workflow or tool
-              designed specifically around your core business and investment
-              model that gives your team better answers, faster, with less
-              friction.
+              We work in the middle market, with companies and firms that carry real
+              complexity without the scale to hire a team against it. Consultants consult,
+              and off-the-shelf software doesn&apos;t know the business well enough. We
+              advise and then build what the advice actually requires.
             </p>
             <p>
-              <span className="emphasis">
-                Most of the time, it&apos;s some combination of all three.
-              </span>{" "}
-              These aren&apos;t separate businesses. They&apos;re connected
-              capabilities, deployed based on what actually solves the problem.
+              We start with real estate domain expertise. Often the answer also involves
+              building something, a solution to the problem in front of us that scales past
+              it and becomes a framework the business can use again.
             </p>
-          </RevealOnScroll>
+          </div>
         </div>
       </section>
 
-      {/* Solutions */}
-      <section className="solutions" id="solutions">
+      <section className="execute" id="execute">
         <div className="container">
-          <RevealOnScroll>
-            <p className="section-label">What I Solve For</p>
-            <h2 className="section-title">
-              Capital, expertise, and tailored solutions, connected.
-            </h2>
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <div className="solutions-grid">
-              <div className="solution-card">
-                <div className="solution-number">01</div>
-                <h3>Capital Structure &amp; Investment Solutions</h3>
-                <p>
-                  Through Marine Street Partners, I invest alongside operators
-                  and investors in situations where capital structures need
-                  creative solutions, basis has reset, where speed and certainty
-                  of execution matter. The focus is always on alignment.
-                </p>
-                <div className="detail">
-                  $5-20M+ equity &nbsp;&middot;&nbsp; LP, GP/co-GP and
-                  structured solutions &nbsp;&middot;&nbsp; Assets / portfolios
-                  / platforms
-                </div>
-              </div>
-              <div className="solution-card">
-                <div className="solution-number">02</div>
-                <h3>Strategic Advisory &amp; Outsourced Leadership</h3>
-                <p>
-                  Through Marine Street Advisory, I work as a strategic partner
-                  with companies, investors, and platforms navigating real estate
-                  complexity. Outsourced CIO and head of real estate roles. Board
-                  support. Capital markets strategy, execution, and
-                  restructuring. Interim leadership during transitions,
-                  fundraises, or platform builds.
-                </p>
-                <div className="detail">
-                  Institutional framework scoped to practical implementation
-                  &nbsp;&middot;&nbsp; Built across market cycles and the capital
-                  stack
-                </div>
-              </div>
-              <div className="solution-card">
-                <div className="solution-number">03</div>
-                <h3>Tailored Solutions &amp; Tools</h3>
-                <p>
-                  Every firm operates differently. I build solutions around how
-                  your business actually works. The value is in the combination
-                  of purpose-built tools and 20+ years of domain experience that
-                  cuts through noise and positions you for what&apos;s ahead.
-                </p>
-                <div className="detail">
-                  Purpose-built tools &nbsp;&middot;&nbsp; Low friction,
-                  integrated into existing systems
-                </div>
-              </div>
+          <p className="section-label">How We Execute</p>
+          <h2 className="section-title">Advice, technology, and capital, connected.</h2>
+          <div className="execute-grid">
+            <div className="execute-card">
+              <h3>Advise</h3>
+              <p>
+                Strategic partnership for companies, investors, and platforms navigating
+                real estate complexity, and working out what technology changes about how
+                they operate. Outsourced CIO and head of real estate roles, board support,
+                capital markets strategy and execution, and hands-on technology
+                implementation for firms that know they need to move and aren&apos;t sure
+                where to start.
+              </p>
             </div>
-          </RevealOnScroll>
+            <div className="execute-card">
+              <h3>Build</h3>
+              <p>
+                Build is a continuation of the advisory work. Every firm operates
+                differently, so we build around how a business actually works: purpose-built
+                tools paired with 20+ years of domain experience that cuts through noise and
+                positions you for what&apos;s ahead.
+              </p>
+            </div>
+            <div className="execute-card">
+              <h3>Invest</h3>
+              <p>
+                Our focus is where real estate and technology intersect, in companies and
+                products building for this industry, where our own operating experience
+                makes us a useful partner. We also invest alongside operators and investors
+                when a capital structure needs a creative answer, and only when the
+                alignment is real.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Audience */}
       <section className="audience" id="audience">
         <div className="container">
-          <RevealOnScroll>
-            <p className="section-label">Who This Is For</p>
-            <h2 className="section-title">
-              Built for principals who need a different kind of partner.
-            </h2>
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <p className="audience-intro">
-              Recapitalization. Platform scale. Leadership transition. Technology
-              modernization. If you&apos;re at a moment that requires
-              experienced, senior-level partnership delivered quickly,
-              that&apos;s where I add the most value.
-            </p>
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <div className="audience-grid">
-              <div className="audience-card">
-                <h3>Owners &amp; Operators</h3>
-                <p>
-                  You&apos;re executing business plans and navigating a market
-                  that demands more creativity and efficiency than ever. Whether
-                  the challenge is capital, strategy, or operational efficiency,
-                  I can help resolve what&apos;s behind and position for
-                  what&apos;s ahead.
-                </p>
-              </div>
-              <div className="audience-card">
-                <h3>Investors &amp; Capital Partners</h3>
-                <p>
-                  You&apos;re making allocation decisions in a market where
-                  information &amp; execution create alpha. I bring institutional
-                  discipline, deep market intelligence, and co-investment
-                  opportunities through Marine Street Partners. For those
-                  building real estate exposure, I serve as an outsourced
-                  perspective with the credibility to sit across from your board
-                  and your partners.
-                </p>
-              </div>
-              <div className="audience-card">
-                <h3>Companies &amp; Firms with Real Estate Exposure</h3>
-                <p>
-                  Your company has real estate complexity and needs a senior
-                  partner who combines institutional investment experience with
-                  purpose-built solutions&mdash;and can operate across capital,
-                  strategy, and execution without adding overhead.
-                </p>
-              </div>
+          <p className="section-label">Who It&apos;s For</p>
+          <h2 className="section-title">
+            Built for principals who need a different kind of partner.
+          </h2>
+          <p className="audience-intro">
+            We act as outsourced leadership and build the systems that help a business scale
+            and run more efficiently. Platform growth, leadership transition, technology
+            modernization, recapitalization: the work arrives in different forms, for
+            owners, operators, investors, lenders, advisors and brokers across the real
+            estate ecosystem.
+          </p>
+          <div className="audience-grid">
+            <div className="audience-card">
+              <h3>Companies with Real Estate Exposure</h3>
+              <p>
+                Your company has real estate complexity and needs a senior partner who
+                combines institutional investment experience with purpose-built solutions,
+                and can operate across capital, strategy, and execution without adding
+                overhead.
+              </p>
             </div>
-          </RevealOnScroll>
+            <div className="audience-card">
+              <h3>Owners &amp; Operators</h3>
+              <p>
+                You&apos;re executing business plans and navigating a market that demands
+                more creativity and efficiency than ever. Whether the challenge is capital,
+                strategy, or operational efficiency, we can help resolve what&apos;s behind
+                and position for what&apos;s ahead.
+              </p>
+            </div>
+            <div className="audience-card">
+              <h3>Investors &amp; Capital Partners</h3>
+              <p>
+                You&apos;re making allocation decisions in a market where information and
+                execution create alpha. We work alongside you on strategy, underwriting and
+                execution, and we co-invest where our own capital belongs next to yours.
+                Institutional discipline, market intelligence, and the credibility to sit
+                across from your board and your partners.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Experience */}
-      <section className="experience" id="experience">
+      <section className="principals" id="principals">
         <div className="container">
-          <RevealOnScroll>
-            <p className="section-label">Experience</p>
-            <h2 className="section-title">
-              20+ years. Multiple cycles. Every layer of the capital stack.
-            </h2>
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <div className="exp-layout">
-              <div className="exp-sidebar">
-                <div className="stat">
-                  <div className="stat-number">$2B+</div>
-                  <div className="stat-label">Direct equity acquisitions</div>
-                </div>
-                <div className="stat">
-                  <div className="stat-number">$2B+</div>
-                  <div className="stat-label">
-                    Asset / Portfolio financings
-                  </div>
-                </div>
-                <div className="stat">
-                  <div className="stat-number">14+</div>
-                  <div className="stat-label">Years at Rialto Capital</div>
+          <p className="section-label">Principals</p>
+          <p className="principals-lede">
+            Twenty years of institutional real estate experience, paired with the
+            engineering discipline to turn it into something a whole team can use.
+          </p>
+          <div className="principals-grid">
+            <div>
+              <div className="principal-head">
+                <Image src="/jeremy.webp" alt="Jeremy Griffin" width={84} height={104} />
+                <div>
+                  <h3>Jeremy Griffin</h3>
+                  <p className="principal-role">CEO</p>
+                  <p className="principal-link">
+                    <a href="https://www.linkedin.com/in/jeremy-griffin-a01b491/" target="_blank" rel="noopener noreferrer">
+                      LinkedIn &#8599;
+                    </a>
+                  </p>
                 </div>
               </div>
-              <div className="exp-content">
-                <p>
-                  Most recently Managing Director at Rialto Capital Management,
-                  where I led West Coast investment strategy and executed
-                  nationally across debt, equity, and structured products as the
-                  firm scaled to $20B+ AUM. Prior experience in real estate
-                  investment banking at J.P. Morgan and Macerich (NYSE: MAC).
-                </p>
-                <div className="exp-earlier">
-                  <div>
-                    <h4>Rialto Capital Management</h4>
-                    <p>Managing Director, Investment Management</p>
-                  </div>
-                  <div>
-                    <h4>Macerich</h4>
-                    <p>Leasing &amp; Operations</p>
-                  </div>
-                  <div>
-                    <h4>Columbia Business School</h4>
-                    <p>MBA, Real Estate &amp; Finance</p>
-                  </div>
-                  <div>
-                    <h4>UCLA</h4>
-                    <p>Bachelor of Arts</p>
-                  </div>
-                </div>
-              </div>
+              <p className="principal-bio">
+                Jeremy spent twenty years inside institutional real estate before building
+                outside it. Managing Director at Rialto Capital Management, leading West
+                Coast investment strategy as the firm scaled past $20B in assets under
+                management, with more than $3 billion of transaction volume across debt and
+                equity. Earlier, J.P. Morgan and Macerich. He now works on what a company
+                should do about its real estate and how it actually gets done.
+              </p>
+              <p className="principal-meta">
+                Capital markets, portfolio strategy, and operating execution.{" "}
+                <strong>MBA, Columbia Business School.</strong>
+              </p>
             </div>
-          </RevealOnScroll>
+            <div>
+              <div className="principal-head">
+                <Image src="/matt.webp" alt="Matt Fitzgerald" width={84} height={104} />
+                <div>
+                  <h3>Matt Fitzgerald</h3>
+                  <p className="principal-role">CTO</p>
+                  <p className="principal-link">
+                    <a href="https://www.linkedin.com/in/matthewmaguirefitzgerald/" target="_blank" rel="noopener noreferrer">
+                      LinkedIn &#8599;
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <p className="principal-bio">
+                Matt builds the internal systems other engineers depend on, taking something
+                one person runs and making it work for an organization. He led factory test
+                infrastructure across four product lines at Mill, and previously ran quality
+                and test engineering at Whisper and new product introduction at Stryker.
+              </p>
+              <p className="principal-meta">
+                Systems architecture, data infrastructure, and the discipline of proving
+                something works before it ships. <strong>MS, Columbia University.</strong>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Contact */}
       <section className="contact" id="contact">
         <div className="container">
-          <RevealOnScroll>
-            <p className="section-label">Let&apos;s Connect</p>
-            <h2 className="section-title">
-              The best partnerships start with a conversation.
-            </h2>
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <div className="contact-layout">
-              <div className="contact-text">
-                <p>
-                  Whether you&apos;re seeking a capital solution,
-                  thinking about how to modernize your operations, or just want
-                  to exchange perspectives on where the market is headed,
-                  I&apos;d welcome the chance to connect.
-                </p>
-                <a
-                  href="mailto:jeremy@jrgriffin.co"
-                  className="contact-email"
-                >
-                  jeremy@jrgriffin.co
-                </a>
-                <div className="contact-links">
-                  <a
-                    href="https://www.linkedin.com/in/jeremy-griffin-a01b491/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn &#8599;
-                  </a>
-                  &nbsp;&nbsp;&nbsp;
-                  <span style={{ fontSize: "0.85rem", color: "var(--stone)" }}>
-                    Los Angeles, CA
-                  </span>
-                </div>
-              </div>
-              <div className="contact-photo">
-                <Image
-                  src="/headshot.png"
-                  alt="Jeremy Griffin"
-                  width={320}
-                  height={320}
-                />
-              </div>
-            </div>
-          </RevealOnScroll>
+          <p className="section-label">Connect</p>
+          <h2 className="section-title">Let&apos;s talk.</h2>
+          <p className="contact-body">
+            Whether it&apos;s a capital decision, an operation that needs rethinking, or a
+            read on where the market is going, we&apos;re glad to hear from you.
+          </p>
+          <a href="mailto:connect@marine-street.com" className="contact-email">
+            connect@marine-street.com
+          </a>
+          <p className="contact-place">Los Angeles, California</p>
         </div>
       </section>
 
-      {/* Footer */}
       <footer>
-        <div className="container">
-          <p>&copy; 2026 Jeremy Griffin</p>
-          <p className="disclaimer">
-            Not an offer to sell or the solicitation of an offer to buy
-            securities. Additional information available upon request.
-          </p>
+        <div className="footer-inner">
+          <p>&copy; 2026 Marine Street</p>
+          <p>Not an offer to sell or the solicitation of an offer to buy securities.</p>
         </div>
       </footer>
     </>
